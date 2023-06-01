@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cards from "./Cards";
 import InfiniteScroll from "./InfiniteScroll";
+import Styles from "./Body.module.css"
 
 const Body = () => {
     const [componentCount, setComponentCount] = useState(1);
@@ -23,6 +24,7 @@ const Body = () => {
             <input
                 value={searchInput}
                 onChange={(event) => setSearchInput(event.target.value)}
+                className={Styles.searchBar}
             />
             {renderComponents()}
             <InfiniteScroll onScrollEnd={handleScrollEnd} />

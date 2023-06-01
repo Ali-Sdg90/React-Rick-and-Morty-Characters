@@ -47,7 +47,7 @@ const Cards = (props) => {
     useEffect(() => {
         if (props.searchFor) {
             const filteredCharacters = data.data.filter((char) =>
-                char.name.includes(props.searchFor)
+                char.name.toLowerCase().includes(props.searchFor.toLowerCase())
             );
             setFilteredData({
                 data: filteredCharacters,
@@ -66,13 +66,46 @@ const Cards = (props) => {
     const characters = props.searchFor ? filteredData.data : data.data;
 
     return (
-        <div className={Styles.container}>
-            {data.isLoading ? (
-                <p>Loading...</p>
-            ) : characters.length > 0 ? (
-                characters.map((item) => <Card data={item} key={item.id} />)
+        <div>
+            {console.log(props.searchFor.length)}
+            {!props.searchFor.length ? (
+                filteredData.data.length ? (
+                    <div className={Styles.container}>
+                        {data.isLoading ? (
+                            <p>Loading...</p>
+                        ) : characters.length > 0 ? (
+                            characters.map((item) => (
+                                <Card data={item} key={item.id} />
+                            ))
+                        ) : (
+                            <p>{characters.errorMessage}</p>
+                        )}
+                    </div>
+                ) : (
+                    <div className={Styles.container}>
+                        {data.isLoading ? (
+                            <p>Loading...</p>
+                        ) : characters.length > 0 ? (
+                            characters.map((item) => (
+                                <Card data={item} key={item.id} />
+                            ))
+                        ) : (
+                            <p>{characters.errorMessage}</p>
+                        )}
+                    </div>
+                )
             ) : (
-                <p>{characters.errorMessage}</p>
+                <div className={Styles.container}>
+                    {data.isLoading ? (
+                        <p>Loading...</p>
+                    ) : characters.length > 0 ? (
+                        characters.map((item) => (
+                            <Card data={item} key={item.id} />
+                        ))
+                    ) : (
+                        <p>{characters.errorMessage}</p>
+                    )}
+                </div>
             )}
         </div>
     );
