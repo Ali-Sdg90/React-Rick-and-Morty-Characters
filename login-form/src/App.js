@@ -1,23 +1,22 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+
 import "./App.css";
+import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
 
-
-function App() {
-
-    useEffect(()=>{
-        document.title = "Rick and Morty Family"
-    })
+const App = () => {
+    useEffect(() => {
+        document.title = "Rick and Morty Family";
+    });
 
     return (
-        <div>
+        <div >
             <Header />
-            <Main />
+            <Body />
             <Footer />
         </div>
     );
-}
+};
 
 export default App;

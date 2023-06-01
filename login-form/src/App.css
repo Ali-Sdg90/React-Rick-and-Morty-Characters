@@ -1,7 +1,4 @@
 body {
     background: rgb(39, 39, 39);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }

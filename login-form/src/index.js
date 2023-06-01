@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
-import App2 from "./App2";
 import "./index.css";
 import axios from "axios";
 
@@ -32,7 +31,7 @@ axios.interceptors.response.use(
 
 ReactDOM.render(
     <BrowserRouter>
-        <App2 />
+        <App />
     </BrowserRouter>,
     document.getElementById("root")
 );
