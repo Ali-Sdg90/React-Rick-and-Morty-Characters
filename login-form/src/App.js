@@ -1,10 +1,20 @@
+import { useEffect } from "react";
 import "./App.css";
-import SignUp from "./components/SignUp";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 
 function App() {
+
+    useEffect(()=>{
+        document.title = "Rick and Morty Family"
+    })
+
     return (
         <div>
-            <h1></h1>
+            <Header />
+            <Main />
+            <Footer />
         </div>
     );
 }

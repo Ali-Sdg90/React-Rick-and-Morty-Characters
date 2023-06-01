@@ -1,0 +1,15 @@
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("../images/run.jpg") center/cover no-repeat;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__text {
+    font-size: 4.5rem;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
