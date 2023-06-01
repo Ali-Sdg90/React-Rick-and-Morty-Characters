@@ -5,7 +5,9 @@ import Styles from "./Header.module.css"
 const Header = () => {
     return (
         <div className={Styles.header}>
-            <h1 className={Styles.header__text}>Rick And Morty Family</h1>
+            <br></br>
+            <h1 className={Styles.header__text}>Rick And Morty</h1>
+            <h1 className={Styles.header__text}>Characters</h1>
         </div>
     );
 };

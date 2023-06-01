@@ -8,6 +8,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     opacity: 0.9;
     transition: opacity 1.5s;
+    position: relative;
 }
 
 .container:hover {
@@ -62,6 +63,23 @@ a {
     font-size: 1.3rem;
 }
 
-a{
+a {
     font-family: sans-serif;
+}
+
+.svg {
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    padding: 3px;
+    margin: 2px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.svg:hover {
+    opacity: 0.9;
 }

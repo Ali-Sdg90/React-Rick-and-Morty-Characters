@@ -7,7 +7,7 @@ import Header from "./components/Header";
 
 const App = () => {
     useEffect(() => {
-        document.title = "Rick and Morty Family";
+        document.title = "Rick and Morty Characters";
     });
 
     return (

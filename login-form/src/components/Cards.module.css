@@ -3,5 +3,5 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 0 50px 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }

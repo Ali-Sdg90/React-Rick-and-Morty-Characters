@@ -1,17 +1,24 @@
 import React from "react";
 
 import Styles from "./Card.module.css";
+import starPin from "../svg/star-pin.svg";
+import starUnpin from "../svg/star-unpin.svg";
 
 const Card = (props) => {
     const statusCircle = Styles[props.data.status];
 
+    const pinCard = () =>{
+        
+    }
+
     return (
         <div className={Styles.container}>
-            {/* <h1>-----------------------------------</h1> */}
             {console.log(props.data)}
-            <img src={props.data.image}></img>
+            <img src={props.data.image} alt="error"></img>
             <div>
-                <h2>{props.data.id}. {props.data.name}</h2>
+                <h2>
+                    {props.data.id}. {props.data.name}
+                </h2>
                 <span>
                     <span className={statusCircle}></span>
                     {props.data.status} - {props.data.species}
@@ -32,6 +39,7 @@ const Card = (props) => {
                 </p>
                 <p>Number of episodes: {props.data.episode.length}</p>
             </div>
+            <img className={Styles.svg} src={starUnpin} onClick={pinCard}></img>
         </div>
     );
 };
