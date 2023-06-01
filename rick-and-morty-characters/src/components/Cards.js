@@ -67,7 +67,6 @@ const Cards = (props) => {
 
     return (
         <div>
-            {console.log(props.searchFor.length)}
             {!props.searchFor.length ? (
                 filteredData.data.length ? (
                     <div className={Styles.container}>

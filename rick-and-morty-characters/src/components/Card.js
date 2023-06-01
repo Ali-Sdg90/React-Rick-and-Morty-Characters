@@ -20,8 +20,7 @@ const Card = (props) => {
 
     return (
         <div className={Styles.container}>
-            {/* {console.log(props.data)} */}
-            <img src={props.data.image} alt="error"></img>
+            <img src={props.data.image} alt="char-image"></img>
             <div>
                 <h2>
                     {props.data.id}. {props.data.name}
