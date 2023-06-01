@@ -1,7 +1,7 @@
 .container {
     border: 1px solid rgb(50, 50, 50);
     display: inline-flex;
-    background: rgb(105, 105, 105);
+    flex-direction: column;
     background: rgb(125, 125, 125);
     border-radius: 20px;
     overflow: hidden;
@@ -82,4 +82,10 @@ a {
 
 .svg:hover {
     opacity: 0.9;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
 }
