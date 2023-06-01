@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 10px solid rgb(24, 24, 24);
+    margin-bottom: 20px;
 }
 
 .header__text {

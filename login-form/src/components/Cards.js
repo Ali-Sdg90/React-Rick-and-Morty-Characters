@@ -1,6 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+import Styles from "./Cards.module.css"
+import Card from "./Card";
+
 const Cards = (props) => {
     const [data, setData] = useState({
         data: [],
@@ -10,7 +13,7 @@ const Cards = (props) => {
 
     useEffect(() => {
         const allCharacters = [];
-        for (let i = 1; i < 10; i++) {
+        for (let i = 1; i < 11; i++) {
             allCharacters.push(i + props.step);
         }
 
@@ -37,13 +40,13 @@ const Cards = (props) => {
     }, []);
 
     return (
-        <div>
-            <h1>HIIIIII</h1>
+        <div className={Styles.container}>
             {data ? (
                 <>
                     {console.log(data)}
                     {data.data.map((item) => (
-                        <p key={item.id}>{item.name}</p>
+                        // <p key={item.id}>{item.name}</p>
+                        <Card data={item} />
                     ))}
                 </>
             ) : (
