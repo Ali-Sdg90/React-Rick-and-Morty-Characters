@@ -50,7 +50,7 @@
 <h2>Acknowledgements</h2>
 <p>
     The Rick and Morty Character Viewer was developed as a personal project and
-    served as a challenge for me. It took approximately 11 hours to complete. I
+    served as a challenge for me. It took approximately 10 hours to complete. I
     would like to thank the creators of the Rick and Morty API for providing the
     character data used in this application.
 </p>
