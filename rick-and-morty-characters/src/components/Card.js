@@ -3,6 +3,7 @@ import Styles from "./Card.module.css";
 import starPin from "../svg/star-pin.svg";
 import starUnpin from "../svg/star-unpin.svg";
 import useLocalStorage from "../hook/useLocalStorage";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
     const statusCircle = Styles[props.data.status];
@@ -31,17 +32,33 @@ const Card = (props) => {
                 </span>
                 <p>
                     Origin:
-                    <a href={props.data.origin.url}>
-                        {" "}
-                        {props.data.origin.name}
-                    </a>
+                    {props.data.origin.name === "unknown" ? (
+                        <span> {props.data.origin.name}</span>
+                    ) : (
+                        <Link
+                            to={`location/${props.data.origin.url.charAt(
+                                props.data.origin.url.length - 1
+                            )}`}
+                        >
+                            {" "}
+                            {props.data.origin.name}
+                        </Link>
+                    )}
                 </p>
                 <p>
                     Last known location:
-                    <a href={props.data.location.url}>
-                        {" "}
-                        {props.data.location.name}
-                    </a>
+                    {props.data.location.name === "unknown" ? (
+                        <span> {props.data.location.name}</span>
+                    ) : (
+                        <Link
+                            to={`location/${props.data.location.url.charAt(
+                                props.data.location.url.length - 1
+                            )}`}
+                        >
+                            {" "}
+                            {props.data.location.name}
+                        </Link>
+                    )}
                 </p>
                 <p>Number of episodes: {props.data.episode.length}</p>
             </div>
