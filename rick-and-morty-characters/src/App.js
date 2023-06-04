@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import Body from "./components/Body";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Locations from "./components/Locations";
+import Locations from "./components/Location";
 
 const App = () => {
     useEffect(() => {
@@ -16,7 +16,8 @@ const App = () => {
         <div>
             <Header />
             <Routes>
-                <Route path="/" element={<Body />} />
+                <Route path="/" element={<Main />} />
+                <Route path="/search/:id" element={<Main />} />
                 <Route path="/location/:id" element={<Locations />} />
             </Routes>
             <Footer />

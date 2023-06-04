@@ -1,0 +1,44 @@
+.residentContainer {
+    background: rgb(91, 91, 91);
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(84, 84, 84);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+    transition: opacity 1.5s;
+    cursor: pointer;
+}
+
+.residentContainer:hover {
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.residentContainer h3 {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+}
+
+.residentContainer img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 28.5px);
+    border-bottom: 2px solid rgb(53, 53, 53);
+}
+
+.residentContainer span {
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}

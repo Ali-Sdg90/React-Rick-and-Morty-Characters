@@ -36,7 +36,7 @@ const Card = (props) => {
                         <span> {props.data.origin.name}</span>
                     ) : (
                         <Link
-                            to={`location/${props.data.origin.url.charAt(
+                            to={`/location/${props.data.origin.url.charAt(
                                 props.data.origin.url.length - 1
                             )}`}
                         >
@@ -51,7 +51,7 @@ const Card = (props) => {
                         <span> {props.data.location.name}</span>
                     ) : (
                         <Link
-                            to={`location/${props.data.location.url.charAt(
+                            to={`/location/${props.data.location.url.charAt(
                                 props.data.location.url.length - 1
                             )}`}
                         >
