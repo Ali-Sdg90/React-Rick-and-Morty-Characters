@@ -29,7 +29,6 @@
 
 a {
     text-decoration: none;
-    color: rgb(51, 58, 122);
 }
 
 .Alive {
@@ -61,10 +60,13 @@ span,
 p,
 a {
     font-size: 1.3rem;
+    
 }
 
-a {
+a,
+.fontFamily {
     font-family: sans-serif;
+    color: rgb(51, 58, 122);
 }
 
 .svg {

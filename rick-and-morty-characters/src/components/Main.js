@@ -11,7 +11,10 @@ const Body = () => {
     const params = useParams();
 
     const handleScrollEnd = () => {
-        setComponentCount((prevCount) => prevCount + 1);
+        if (componentCount < 84) {
+            setComponentCount((prevCount) => prevCount + 1);
+        }
+        console.log(componentCount);
     };
 
     const renderComponents = () => {
@@ -22,9 +25,11 @@ const Body = () => {
         return components;
     };
 
-    useEffect(()=>{
-        setSearchInput(params.id)
-    },[])
+    useEffect(() => {
+        if (params.id) {
+            setSearchInput(params.id);
+        }
+    }, []);
 
     return (
         <div>

@@ -32,9 +32,12 @@ const Card = (props) => {
                 </span>
                 <p>
                     Origin:
-                    {props.data.origin.name === "unknown" ? (
-                        <span> {props.data.origin.name}</span>
+                    {props.data.origin.name === "unknown" ||
+                    props.data.origin.name ===
+                        "Earth (Replacement Dimension)" ? (
+                        <span className={Styles.fontFamily}> {props.data.origin.name}</span>
                     ) : (
+                        
                         <Link
                             to={`/location/${props.data.origin.url.charAt(
                                 props.data.origin.url.length - 1
@@ -47,8 +50,10 @@ const Card = (props) => {
                 </p>
                 <p>
                     Last known location:
-                    {props.data.location.name === "unknown" ? (
-                        <span> {props.data.location.name}</span>
+                    {props.data.location.name === "unknown" ||
+                    props.data.location.name ===
+                        "Earth (Replacement Dimension)" ? (
+                        <span className={Styles.fontFamily}> {props.data.location.name}</span>
                     ) : (
                         <Link
                             to={`/location/${props.data.location.url.charAt(

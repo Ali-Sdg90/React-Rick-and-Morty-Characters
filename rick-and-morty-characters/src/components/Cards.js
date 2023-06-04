@@ -66,47 +66,16 @@ const Cards = (props) => {
     const characters = props.searchFor ? filteredData.data : data.data;
 
     return (
-        <div>
-            {console.log(props.searchFor)}
-            {!props.searchFor.length ? (
-                filteredData.data.length ? (
-                    <div className={Styles.container}>
-                        {data.isLoading ? (
-                            <p>Loading...</p>
-                        ) : characters.length > 0 ? (
-                            characters.map((item) => (
-                                <Card data={item} key={item.id} />
-                            ))
-                        ) : (
-                            <p>{characters.errorMessage}</p>
-                        )}
-                    </div>
+        <div className={Styles.cards}>
+            <div className={Styles.container}>
+                {data.isLoading ? (
+                    <p>Loading...</p>
+                ) : characters.length > 0 ? (
+                    characters.map((item) => <Card data={item} key={item.id} />)
                 ) : (
-                    <div className={Styles.container}>
-                        {data.isLoading ? (
-                            <p>Loading...</p>
-                        ) : characters.length > 0 ? (
-                            characters.map((item) => (
-                                <Card data={item} key={item.id} />
-                            ))
-                        ) : (
-                            <p>{characters.errorMessage}</p>
-                        )}
-                    </div>
-                )
-            ) : (
-                <div className={Styles.container}>
-                    {data.isLoading ? (
-                        <p>Loading...</p>
-                    ) : characters.length > 0 ? (
-                        characters.map((item) => (
-                            <Card data={item} key={item.id} />
-                        ))
-                    ) : (
-                        <p>{characters.errorMessage}</p>
-                    )}
-                </div>
-            )}
+                    <p>{characters.errorMessage}</p>
+                )}
+            </div>
         </div>
     );
 };

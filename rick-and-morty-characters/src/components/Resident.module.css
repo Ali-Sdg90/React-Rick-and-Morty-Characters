@@ -11,6 +11,7 @@
     opacity: 0.9;
     transition: opacity 1.5s;
     cursor: pointer;
+    max-width: 300px;
 }
 
 .residentContainer:hover {

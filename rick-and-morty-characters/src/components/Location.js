@@ -69,7 +69,7 @@ const Locations = () => {
                     <img
                         src={randomImgSelecter()}
                         alt="random-location-img"
-                        title="Random image"
+                        title="Random location"
                     ></img>
                     <div>
                         <h2>
