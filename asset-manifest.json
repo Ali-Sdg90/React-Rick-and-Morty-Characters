@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Rick-and-Morty-Characters/static/css/main.f4919d84.css",
-    "main.js": "/React-Rick-and-Morty-Characters/static/js/main.8abfc46e.js",
+    "main.js": "/React-Rick-and-Morty-Characters/static/js/main.c29d2e66.js",
     "static/media/5.webp": "/React-Rick-and-Morty-Characters/static/media/5.383e20468b1fbe13576c.webp",
     "static/media/7.jpg": "/React-Rick-and-Morty-Characters/static/media/7.56e15fd24d008f0e6f6a.jpg",
     "static/media/run.jpg": "/React-Rick-and-Morty-Characters/static/media/run.2904c679145563e04753.jpg",
@@ -17,10 +17,10 @@
     "static/media/star-pin.svg": "/React-Rick-and-Morty-Characters/static/media/star-pin.ad39d40d1d04e92c5089f18ad4024fe7.svg",
     "index.html": "/React-Rick-and-Morty-Characters/index.html",
     "main.f4919d84.css.map": "/React-Rick-and-Morty-Characters/static/css/main.f4919d84.css.map",
-    "main.8abfc46e.js.map": "/React-Rick-and-Morty-Characters/static/js/main.8abfc46e.js.map"
+    "main.c29d2e66.js.map": "/React-Rick-and-Morty-Characters/static/js/main.c29d2e66.js.map"
   },
   "entrypoints": [
     "static/css/main.f4919d84.css",
-    "static/js/main.8abfc46e.js"
+    "static/js/main.c29d2e66.js"
   ]
 }
