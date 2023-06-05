@@ -10,11 +10,6 @@ const Cards = (props) => {
         isLoading: true,
         errorMessage: "",
     });
-    const [filteredData, setFilteredData] = useState({
-        data: [],
-        isLoading: true,
-        errorMessage: "",
-    });
 
     useEffect(() => {
         const allCharacters = [];
@@ -44,26 +39,11 @@ const Cards = (props) => {
             });
     }, [props.step]);
 
-    useEffect(() => {
-        if (props.searchFor) {
-            const filteredCharacters = data.data.filter((char) =>
-                char.name.toLowerCase().includes(props.searchFor.toLowerCase())
-            );
-            setFilteredData({
-                data: filteredCharacters,
-                isLoading: false,
-                errorMessage: "No Results Found",
-            });
-        } else {
-            setFilteredData({
-                data: [],
-                isLoading: false,
-                errorMessage: "",
-            });
-        }
-    }, [props.searchFor, data.data]);
-
-    const characters = props.searchFor ? filteredData.data : data.data;
+    const characters = props.searchFor
+        ? data.data.filter((char) =>
+              char.name.toLowerCase().includes(props.searchFor.toLowerCase())
+          )
+        : data.data;
 
     return (
         <div className={Styles.cards}>
@@ -73,7 +53,7 @@ const Cards = (props) => {
                 ) : characters.length > 0 ? (
                     characters.map((item) => <Card data={item} key={item.id} />)
                 ) : (
-                    <p>{characters.errorMessage}</p>
+                    ""
                 )}
             </div>
         </div>

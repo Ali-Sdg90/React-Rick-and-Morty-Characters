@@ -14,9 +14,9 @@ const Body = () => {
         if (componentCount < 84) {
             setComponentCount((prevCount) => prevCount + 1);
         }
-        console.log(componentCount);
     };
 
+    // renderComponents
     const renderComponents = () => {
         const components = [];
         for (let i = 0; i < componentCount; i++) {
@@ -33,12 +33,13 @@ const Body = () => {
 
     return (
         <div>
-            {console.log("==>", params.id)}
+            {/* {console.log("==>", params.id)} */}
             <input
                 value={searchInput}
                 onChange={(event) => setSearchInput(event.target.value)}
                 className={Styles.searchBar}
             />
+            
             {renderComponents()}
             <InfiniteScroll onScrollEnd={handleScrollEnd} />
         </div>
