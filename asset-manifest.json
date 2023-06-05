@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Rick-and-Morty-Characters/static/css/main.f4919d84.css",
+    "main.js": "/React-Rick-and-Morty-Characters/static/js/main.8abfc46e.js",
+    "static/media/5.webp": "/React-Rick-and-Morty-Characters/static/media/5.383e20468b1fbe13576c.webp",
+    "static/media/7.jpg": "/React-Rick-and-Morty-Characters/static/media/7.56e15fd24d008f0e6f6a.jpg",
+    "static/media/run.jpg": "/React-Rick-and-Morty-Characters/static/media/run.2904c679145563e04753.jpg",
+    "static/media/3.jpg": "/React-Rick-and-Morty-Characters/static/media/3.76d9faf4d3532989e69c.jpg",
+    "static/media/1.webp": "/React-Rick-and-Morty-Characters/static/media/1.a7a2d677991b36b8e606.webp",
+    "static/media/4.jpg": "/React-Rick-and-Morty-Characters/static/media/4.e63782d1c82070c14705.jpg",
+    "static/media/6.webp": "/React-Rick-and-Morty-Characters/static/media/6.58ead9177dfa3dd6832d.webp",
+    "static/media/404.webp": "/React-Rick-and-Morty-Characters/static/media/404.59382001ca42dcaa3b78.webp",
+    "static/media/2.webp": "/React-Rick-and-Morty-Characters/static/media/2.6f5ae74379738f9fda9a.webp",
+    "static/media/9.webp": "/React-Rick-and-Morty-Characters/static/media/9.6c028644431cd2b4b230.webp",
+    "static/media/8.jpg": "/React-Rick-and-Morty-Characters/static/media/8.bdf607bf4c1a14a0980f.jpg",
+    "static/media/star-unpin.svg": "/React-Rick-and-Morty-Characters/static/media/star-unpin.8077041d32f49a37b3f2019cacfac18f.svg",
+    "static/media/star-pin.svg": "/React-Rick-and-Morty-Characters/static/media/star-pin.ad39d40d1d04e92c5089f18ad4024fe7.svg",
+    "index.html": "/React-Rick-and-Morty-Characters/index.html",
+    "main.f4919d84.css.map": "/React-Rick-and-Morty-Characters/static/css/main.f4919d84.css.map",
+    "main.8abfc46e.js.map": "/React-Rick-and-Morty-Characters/static/js/main.8abfc46e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4919d84.css",
+    "static/js/main.8abfc46e.js"
+  ]
+}
