@@ -3,6 +3,12 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
+::selection {
+    background: rgba(0, 162, 0, 0.784);
+    color: rgb(255, 240, 71);
+}
+
 ::-webkit-scrollbar {
     width: 17px;
 }
