@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import "./App.css";
 import Main from "./components/Main";
@@ -9,9 +9,12 @@ import Locations from "./components/Location";
 import PageNotFound from "./components/PageNotFound";
 
 const App = () => {
+    const location = useLocation();
+
     useEffect(() => {
         document.title = "Rick and Morty Characters";
-    });
+        // console.log("URL changed:", location.pathname);
+    }, [location.pathname]);
 
     return (
         <div>
@@ -19,10 +22,17 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/search/:id" element={<Main />} />
+                <Route
+                    path="/React-Rick-and-Morty-Characters"
+                    element={<Main />}
+                />
                 <Route path="/location/:id" element={<Locations />} />
-                <Route path="/location/0" element={<Navigate to="/notfound" />}/>
-                <Route path="/*" element={<Navigate to="/notfound" />}/>
-                <Route path="/notfound" element={<PageNotFound />}/>
+                <Route
+                    path="/location/0"
+                    element={<Navigate to="/notfound" />}
+                />
+                <Route path="/*" element={<Navigate to="/notfound" />} />
+                <Route path="/notfound" element={<PageNotFound />} />
             </Routes>
             <Footer />
         </div>
