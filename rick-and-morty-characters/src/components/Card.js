@@ -39,7 +39,7 @@ const Card = (props) => {
                     ) : (
                         
                         <Link
-                            to={`/location/${props.data.origin.url.charAt(
+                            to={`/React-Rick-and-Morty-Characters/location/${props.data.origin.url.charAt(
                                 props.data.origin.url.length - 1
                             )}`}
                         >
@@ -56,7 +56,7 @@ const Card = (props) => {
                         <span className={Styles.fontFamily}> {props.data.location.name}</span>
                     ) : (
                         <Link
-                            to={`/location/${props.data.location.url.charAt(
+                            to={`/React-Rick-and-Morty-Characters/location/${props.data.location.url.charAt(
                                 props.data.location.url.length - 1
                             )}`}
                         >

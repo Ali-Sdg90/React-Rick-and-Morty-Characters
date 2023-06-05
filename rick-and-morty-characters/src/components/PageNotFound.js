@@ -7,7 +7,7 @@ const PageNotFound = () => {
         <div className={Styles.container}>
             <h1>404</h1>
             <h2>Page Not Found</h2>
-            <Link to="/">HomePage</Link>
+            <Link to="/React-Rick-and-Morty-Characters">HomePage</Link>
         </div>
     );
 };

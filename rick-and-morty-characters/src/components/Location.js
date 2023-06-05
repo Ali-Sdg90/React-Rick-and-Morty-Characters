@@ -62,7 +62,7 @@ const Locations = () => {
                 <h1>Loading...</h1>
             ) : (
                 <>
-                    <Link to="/">
+                    <Link to="/React-Rick-and-Morty-Characters">
                         <button>All Characters</button>
                     </Link>
 

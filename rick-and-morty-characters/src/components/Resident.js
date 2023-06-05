@@ -15,7 +15,7 @@ const Residents = (props) => {
 
     return (
         <div className={Styles.residentContainer}>
-            <Link to={`/search/${data.name}`}>
+            <Link to={`/React-Rick-and-Morty-Characters/search/${data.name}`}>
                 <img src={data.image} alt="char-img"></img>
                 <span>
                     <h3>

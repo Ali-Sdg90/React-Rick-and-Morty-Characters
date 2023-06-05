@@ -20,19 +20,30 @@ const App = () => {
         <div>
             <Header />
             <Routes>
-                <Route path="/" element={<Main />} />
-                <Route path="/search/:id" element={<Main />} />
                 <Route
                     path="/React-Rick-and-Morty-Characters"
                     element={<Main />}
                 />
-                <Route path="/location/:id" element={<Locations />} />
                 <Route
-                    path="/location/0"
+                    path="/React-Rick-and-Morty-Characters/search/:id"
+                    element={<Main />}
+                />
+                <Route
+                    path="/React-Rick-and-Morty-Characters/location/:id"
+                    element={<Locations />}
+                />
+                <Route
+                    path="/React-Rick-and-Morty-Characters/location/0"
                     element={<Navigate to="/notfound" />}
                 />
-                <Route path="/*" element={<Navigate to="/notfound" />} />
-                <Route path="/notfound" element={<PageNotFound />} />
+                <Route
+                    path="/React-Rick-and-Morty-Characters/*"
+                    element={<Navigate to="/notfound" />}
+                />
+                <Route
+                    path="/React-Rick-and-Morty-Characters/notfound"
+                    element={<PageNotFound />}
+                />
             </Routes>
             <Footer />
         </div>
