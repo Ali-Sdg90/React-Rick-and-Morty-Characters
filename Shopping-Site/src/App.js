@@ -1,17 +1,22 @@
 import React, { useEffect } from "react";
-import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import "./App.css";
+import ProductDetail from "./components/ProductDetail";
 import Store from "./components/Store";
 
 import ProductContextProvider from "./context/ProductContextProvider";
 
 const App = () => {
-    const location = useLocation();
-
     return (
         <ProductContextProvider>
-            <Store />
+            <Routes>
+                <Route path="/shopping-site/products" element={<Store />} />
+                <Route
+                    path="/shopping-site/products/:id"
+                    element={<ProductDetail />}
+                />
+            </Routes>
         </ProductContextProvider>
     );
 };
