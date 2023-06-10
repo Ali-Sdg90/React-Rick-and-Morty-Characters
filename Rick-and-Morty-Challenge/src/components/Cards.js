@@ -45,9 +45,11 @@ const Cards = (props) => {
           )
         : data.data;
 
+    const containerClass = characters.length === 0 ? Styles.hidden : Styles.container;
+
     return (
         <div className={Styles.cards}>
-            <div className={Styles.container}>
+            <div className={containerClass}>
                 {data.isLoading ? (
                     <p>Loading...</p>
                 ) : characters.length > 0 ? (
