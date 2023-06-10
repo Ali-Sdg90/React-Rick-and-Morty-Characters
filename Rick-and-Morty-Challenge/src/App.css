@@ -2,15 +2,14 @@ body {
     background: rgb(39, 39, 39);
     width: 100%;
     overflow-x: hidden;
-    color: white;
 }
 
-/* ::selection {
+::selection {
     background: rgba(0, 162, 76, 0.85);
     color: rgb(255, 241, 81);
-} */
+}
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 17px;
 }
 ::-webkit-scrollbar {
@@ -27,4 +26,4 @@ body {
     background: rgb(228, 228, 228);
     outline-offset: -2px;
     outline-width: 4px;
-} */
+}

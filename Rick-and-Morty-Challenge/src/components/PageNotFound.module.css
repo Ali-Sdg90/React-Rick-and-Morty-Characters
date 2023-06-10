@@ -1,0 +1,58 @@
+.container {
+    min-height: 100vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 80px;
+    border: 1px solid rgb(50, 50, 50);
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("../image/404.webp") center/cover no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    min-height: 100vh;
+    margin: 20px auto;
+    position: relative;
+}
+
+.container h1 {
+    font-size: 300px;
+    position: absolute;
+    top: 100px;
+    letter-spacing: 20px;
+    text-shadow: 0 0 60px white;
+}
+
+.container h2 {
+    font-size: 60px;
+    position: absolute;
+    bottom: 120px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.container a {
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    border: 2px solid rgb(39, 39, 39);
+    height: 50px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: gray;
+    transition: opacity 0.2s;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+    opacity: 0.85;
+    box-shadow: 0 3px 10px black;
+}
+.container a:hover {
+    opacity: 1;
+}
+.container a:active {
+    opacity: 0.8;
+}
